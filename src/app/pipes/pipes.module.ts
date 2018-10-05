@@ -4,9 +4,12 @@ import { ImagenPipe } from './imagen.pipe';
 
 
 @NgModule({
-  imports: [
+  imports: [ ],
+  declarations: [
+    ImagenPipe
   ],
-  declarations: [ImagenPipe],
-  exports: [ImagenPipe]
+  exports: [
+    ImagenPipe
+  ]
 })
 export class PipesModule { }
