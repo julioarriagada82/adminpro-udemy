@@ -14,19 +14,19 @@
                         <div class="form-group">
                             <label>Hospital</label>
                             <select (change)="cambioHospital( $event.target.value )" [(ngModel)]="medico.hospital" name="hospital" class="form-control" required>
-                              <option value="">Seleccione Hospital</option>
-                              <option *ngFor="let hospital of hospitales" [value]="hospital._id">
-                                {{ hospital.nombre }}
-                              </option>
-                            </select>
+                                  <option value="">Seleccione Hospital</option>
+                                  <option *ngFor="let hospital of hospitales" [value]="hospital._id">
+                                    {{ hospital.nombre }}
+                                  </option>
+                                </select>
 
                         </div>
 
 
                         <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">
-                          <i class="fa fa-save"></i>
-                          Guardar
-                        </button>
+                              <i class="fa fa-save"></i>
+                              Guardar
+                            </button>
                         <a routerLink="/medicos" class="btn btn-inverse waves-effect waves-light">Cancelar</a>
                     </form>
                 </div>
